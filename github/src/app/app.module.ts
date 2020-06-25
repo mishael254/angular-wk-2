@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { GithubFormComponent } from './github-form/github-form.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    GithubFormComponent
   ],
   imports: [
     BrowserModule,
