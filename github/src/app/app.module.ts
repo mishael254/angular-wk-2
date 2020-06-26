@@ -7,6 +7,7 @@ import { GithubFormComponent } from './github-form/github-form.component';
 import { GithubComponent } from './github/github.component';
 import { DataReceiverComponent } from './data-receiver/data-receiver.component';
 import { HttpClientModule } from "@angular/common/http";
+import { LocalService } from './local-service/local.service';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,9 @@ import { HttpClientModule } from "@angular/common/http";
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [
+    LocalService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
