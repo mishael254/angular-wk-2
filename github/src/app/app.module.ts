@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { GithubFormComponent } from './github-form/github-form.component';
 import { GithubComponent } from './github/github.component';
 import { DataReceiverComponent } from './data-receiver/data-receiver.component';
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { DataReceiverComponent } from './data-receiver/data-receiver.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
