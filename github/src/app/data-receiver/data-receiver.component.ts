@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LocalService } from '../local-service/local.service';
 
 @Component({
   selector: 'app-data-receiver',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DataReceiverComponent implements OnInit {
 
-  constructor() { }
+  constructor(private localService:LocalService) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.localService.getUsers()
+    .subscribe(data => {
+      console.log(data)
+    });
+    
   }
 
 }
