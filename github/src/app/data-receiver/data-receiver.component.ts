@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { LocalService } from '../local-service/local.service';
+import { HttpClient } from "@angular/common/http";
+import { UserClass } from "../user/user-class";
+import { GithubRepo } from "../repository/github-repo";
 
 @Component({
   selector: 'app-data-receiver',
@@ -7,15 +9,25 @@ import { LocalService } from '../local-service/local.service';
   styleUrls: ['./data-receiver.component.css']
 })
 export class DataReceiverComponent implements OnInit {
+  
+  userclass:UserClass
+  githubrepo:GithubRepo
 
-  constructor(private localService:LocalService) { }
+
+  constructor(private http:HttpClient) { }
 
   ngOnInit() {
-    this.localService.getUsers()
-    .subscribe(data => {
-      console.log(data)
-    });
-    
+    interface ApiResponse {
+      login:string
+      repos_url:string
+    }
+    this.http.get<ApiResponse>("https://api.github.com/users").subscribe(data =>{
+    this.userclass = new UserClass(data.login,)
+    }),
+    this.http.get<ApiResponse>("https://api.github.com/users").subscribe(data =>{
+    this.githubrepo = new GithubRepo(data.repos_url)
+    })
+
   }
 
 }
