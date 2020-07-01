@@ -8,13 +8,16 @@ import { GithubComponent } from './github/github.component';
 import { DataReceiverComponent } from './data-receiver/data-receiver.component';
 import { HttpClientModule } from "@angular/common/http";
 import { LocalService } from './local-service/local.service';
-
+import { GithubRepo } from "../app/repository/github-repo";
+import { UserClass } from "../app/user/user-class";
 @NgModule({
   declarations: [
     AppComponent,
     GithubFormComponent,
     GithubComponent,
     DataReceiverComponent
+    
+    
   ],
   imports: [
     BrowserModule,
