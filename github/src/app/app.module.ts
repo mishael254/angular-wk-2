@@ -8,12 +8,14 @@ import { GithubComponent } from './github/github.component';
 
 import { HttpClientModule } from "@angular/common/http";
 import { LocalService } from './local-service/local.service';
+import { UserComponent } from './user/user.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GithubFormComponent,
     GithubComponent,
+    UserComponent,
     
     
     
