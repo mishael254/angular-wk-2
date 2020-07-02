@@ -9,7 +9,20 @@ import { LocalService } from '../local-service/local.service';
   styleUrls: ['./user.component.css']
 })
 export class UserComponent implements OnInit {
-  user:User
+  user : User
+  profile = { login: '',
+    company: '',
+    location: '',
+    avatar_url: '',
+    public_repos: '',
+    public_gist: '',
+    followers: '',
+    following: '',
+    email: '',
+    bio: '',
+    created_at: ''};
+  repos: any[];
+  username: string;
 
   constructor(private localservice:LocalService) {
     
