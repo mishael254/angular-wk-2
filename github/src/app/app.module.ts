@@ -10,6 +10,7 @@ import { HttpClientModule } from "@angular/common/http";
 import { LocalService } from './local-service/local.service';
 import { UserComponent } from './user/user.component';
 import { RepoComponent } from './repo/repo.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { RepoComponent } from './repo/repo.component';
     GithubComponent,
     UserComponent,
     RepoComponent,
+    AboutComponent,
     
     
     
