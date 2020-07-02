@@ -1,27 +1,111 @@
-# Github
+# Github-API-Search--Update-Angular-cli-7
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
+## This app is called [Github Search-APP:]
+### **This project was done using ANGULAR-Cli ** 
+
+### **contributers are:mishael ndegwa **
+            
+
+
+
+# DESCRIPTION
+
+This is a **Github Search :mag:** application that searches for user and displays their profile info using the ***Github API.***
+
+This is a website where users may enter a GitHub username into a form, submit it, and see names and descriptions of that person's public repositories. 
+
+GitHub API was used to retrieve this information. This API allows ***5,000*** requests per hour with an API key, but only 60 requests per hour _without_ one.
+
+## User Story
+
+- Users can enter Github user info info a form and submit it.
+
+- Users can see names and descriptions of person's public repositories.
+
+- Users can make up to 5000 requests per hour due to Github-API integration.
+
+# Prerequisites
+
+    -few requirements needed..
+
+- Node.js
+
+- Angular
+
+- Typescript
+
+- Terminal
+
+If you dont have this requirements you could use the link above to help with the installation guide.
+
+# **SETUP/INSTALLATION.**
+
+### **To work With Github Search**
+
+1. You will need Internet connection.
+
+2. You will also need a Webpage URL to load in URL's:
+
+3. 
+4. From there you can access Git-search.
+
+5. **Clone** the project.
+
+6. Once you done with cloning and project is on your device.
+
+7. get into project folder (cd into project).
+
+8. On your **bash** terminal Run the command:- 
+
+```
+ng serve
+```
+
+9. Open your prefered **web browser** and load it on local host:
+
+```
+http://localhost:4200/
+```
+
+10. This will load for you Github Search as long as your requirements are satisfied.
+
+
+# TECHNOLOGIES USED
+
+1. Angular Version7 (Framework)
+
+2. Type Script
+
+3.
+
+4. Bootstrap
+
+5. CSS
 
 ## Development server
+---
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Deployment
+---
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+App was deployed to [Github Pages](https://pages.github.com/) using Angular Cli, 
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+## Support and Contact
+---
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+-Mobile number: (+254) 712345678
 
-## Running end-to-end tests
+-Email Address: mishaelmishantoz@gmail.com
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+-github-username: mishael254
 
-## Further help
+## License
+---
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+The app is licensed by MIT.
+
+MIT (c) 2018
