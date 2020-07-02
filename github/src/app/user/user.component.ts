@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
 import { User } from "../user-class/user";
-import { LocalService } from '../local-service/local.service';
-
+import { LocalService } from '../local-service/local.service'
 @Component({
   selector: 'app-user',
   templateUrl: './user.component.html',
@@ -24,15 +22,13 @@ export class UserComponent implements OnInit {
   repos: any[];
   username: string;
 
-  constructor(private localservice:LocalService) {
-    
-   }
+
+  constructor(private localservice:LocalService) { }
 
   ngOnInit(): void {
     this.localservice.userRequest()
     this.user = this.localservice.user
-    
-  
+
   }
 
 }
