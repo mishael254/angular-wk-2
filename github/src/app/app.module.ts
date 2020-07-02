@@ -12,6 +12,7 @@ import { UserComponent } from './user/user.component';
 import { RepoComponent } from './repo/repo.component';
 import { AboutComponent } from './about/about.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { GUserService } from './github-user/g-user.service';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
     HttpClientModule
   ],
   providers: [
+    GUserService,
     LocalService
   ],
   bootstrap: [AppComponent]
