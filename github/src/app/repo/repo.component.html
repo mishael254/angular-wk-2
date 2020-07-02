@@ -1,1 +1,11 @@
-<p>repo works!</p>
+<section class="section">
+    <div class="container">
+        
+        <div class="card" *ngIf = "Guser">
+            <img [src]="Guser.avatar_url" alt="profile pic">
+            <h2>{{Guser.login}}</h2>
+
+        </div>
+    </div>
+</section>
+
