@@ -1,6 +1,23 @@
 <div class="row">
     <blockquote class="blockquote text-center">
-      <p class="mb-0">{{user.login}}</p>
+
+      <section class="section">
+        <div class="container">
+
+          <div class="columns" *ngIf = "Gusers">
+            <div class="column" *ngFor = "let Guser of Gusers">
+              <div class="card">
+                <div class="card-content">
+                  {{Guser.login}}
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+         
+        </div>
+     </section>
       
     </blockquote>
 </div>
