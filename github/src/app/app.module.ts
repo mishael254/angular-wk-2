@@ -11,6 +11,7 @@ import { LocalService } from './local-service/local.service';
 import { UserComponent } from './user/user.component';
 import { RepoComponent } from './repo/repo.component';
 import { AboutComponent } from './about/about.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { AboutComponent } from './about/about.component';
     UserComponent,
     RepoComponent,
     AboutComponent,
+    NavBarComponent,
     
     
     
