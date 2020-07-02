@@ -17,7 +17,7 @@ export class LocalService {
       login:string;
     }
     let promise = new Promise((resolve,reject)=>{
-      this.http.get<ApiResponse>( "https://api.github.com/users/repos" + environment.access_token).toPromise().then(response=>{
+      this.http.get<ApiResponse>( environment.apiUrl + environment.access_token ).toPromise().then(response=>{
         this.user.login = response.login
         
 
