@@ -108,4 +108,4 @@ App was deployed to [Github Pages](https://pages.github.com/) using Angular Cli,
 
 The app is licensed by MIT.
 
-MIT (c) 2018
+MIT (c) 2020
